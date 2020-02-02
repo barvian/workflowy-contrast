@@ -1,0 +1,56 @@
+body:not(html) {
+  color: #000;
+}
+
+.contentLink, .contentTag {
+  color: #4169e1 !important;
+}
+
+.header, .leftBar > :first-child {
+  color: rgb(57, 64, 68) !important;
+}
+
+.itemMenu > svg {
+  color: rgb(134, 140, 144);
+}
+
+.searchBoxInput {
+  color: rgb(42, 49, 53);
+}
+
+.name {
+  /*font-weight: bold !important;*/
+}
+
+.noted > .notes > .content {
+  color: rgb(57, 64, 68) !important;
+  font: inherit;
+  /*font-style: italic;*/
+  line-height: 21px;
+  max-height: 21px;
+}
+
+.content:not(:focus) > .contentLink {
+  max-width: 15em !important;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  vertical-align: bottom;
+  white-space: nowrap;
+  display: inline-block !important;
+}
+
+  .content:not(:focus) > .contentLink[href^="http://"] {
+    text-indent: -2.75em;
+  }
+  
+  .content:not(:focus) > .contentLink[href^="https://"] {
+    text-indent: -3.2em;
+  }
+  
+  .content:not(:focus) > .contentLink[href^="http://www."] {
+    text-indent: -5.125em;
+  }
+  
+  .content:not(:focus) > .contentLink[href^="https://www."] {
+    text-indent: -5.725em;
+  }

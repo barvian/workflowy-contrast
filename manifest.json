@@ -1,0 +1,11 @@
+{
+    "name": "Workflowy High Contrast",
+    "version": "1.0",
+    "manifest_version": 2,
+    "description": "Improve contrast on Workflowy for my reflective screen",
+    "permissions": ["*://*.workflowy.com/*"],
+    "content_scripts": [{
+        "matches": ["*://*.workflowy.com/*"],
+        "css": ["contrast.css"]
+    }]
+}
