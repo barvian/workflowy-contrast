@@ -54,3 +54,30 @@ body:not(html) {
   .content:not(:focus) > .contentLink[href^="https://www."] {
     text-indent: -5.725em;
   }
+
+@media (max-height: 450px) {
+  .header {
+    flex-direction: column !important;
+    height: 100% !important;
+    min-width: 0 !important;
+    width: 48px !important;
+    right: auto !important;
+  }
+  
+    .header > :first-child {
+      margin-bottom: auto !important;
+    }
+    
+      .header > :first-child > * {
+        margin: 0 !important;
+      }
+  
+  .breadcrumbs {
+    display: none !important;
+  }
+  
+  .pageContainer > .page {
+    margin-top: 0 !important;
+    padding-left: 108px !important;
+  }
+}
