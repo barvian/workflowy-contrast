@@ -61,15 +61,21 @@ body:not(html) {
     height: 100% !important;
     min-width: 0 !important;
     width: 48px !important;
-    right: auto !important;
+    left: auto !important;
   }
   
     .header > :first-child {
-      margin-bottom: auto !important;
+      left: 0 !important;
+      top: 0 !important;
+      position: fixed !important;
     }
     
       .header > :first-child > * {
         margin: 0 !important;
+      }
+      
+      .header .gearMenu {
+        margin-top: auto !important;
       }
   
   .breadcrumbs {
